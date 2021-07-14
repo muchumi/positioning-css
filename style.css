@@ -1,0 +1,27 @@
+.parent-box{
+    width: 500px;
+    height: 1000px;
+    padding: 1rem;
+    border: 2px solid #000000;
+    position: relative;
+}
+.childOne{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    background: #0000ff;
+}
+.childTwo{
+    width: 250px;
+    height: 250px;
+    background: #ff0000;
+}
+
+/* Position static does no change to our objects.It defaults to the HTML document flow.
+   Position relative is similar to static but it gives us access to four properties, top, left, bottom and right.
+   It messes the document flow.Not efficient for use in positioning elements on html document.
+   Position absolute removes the element from the document flow and positions itself in reference to a container.
+   That container has to have a position property i.e relative assigned to it as well.
+   Position sticky is a combination of positions relative and fixed.Prevents elements from getting out of the parent container.*/
